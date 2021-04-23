@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		142D86742630F5F700EF8F89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142D86732630F5F700EF8F89 /* AppDelegate.swift */; };
 		142D86762630F5F700EF8F89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142D86752630F5F700EF8F89 /* SceneDelegate.swift */; };
-		142D86782630F5F700EF8F89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142D86772630F5F700EF8F89 /* ViewController.swift */; };
 		142D867B2630F5F700EF8F89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142D86792630F5F700EF8F89 /* Main.storyboard */; };
 		142D867D2630F5F900EF8F89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 142D867C2630F5F900EF8F89 /* Assets.xcassets */; };
 		142D86802630F5F900EF8F89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142D867E2630F5F900EF8F89 /* LaunchScreen.storyboard */; };
+		142D868A2630F74B00EF8F89 /* TCPConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142D86892630F74B00EF8F89 /* TCPConnection.swift */; };
+		14DFF9FA26324A600009FA19 /* TaskTwoMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DFF9F926324A600009FA19 /* TaskTwoMainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		142D86702630F5F700EF8F89 /* Task2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		142D86732630F5F700EF8F89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		142D86752630F5F700EF8F89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		142D86772630F5F700EF8F89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		142D867A2630F5F700EF8F89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		142D867C2630F5F900EF8F89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		142D867F2630F5F900EF8F89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		142D86812630F5F900EF8F89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		142D86892630F74B00EF8F89 /* TCPConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCPConnection.swift; sourceTree = "<group>"; };
+		14DFF9F926324A600009FA19 /* TaskTwoMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTwoMainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		142D86722630F5F700EF8F89 /* Task2 */ = {
 			isa = PBXGroup;
 			children = (
-				142D86732630F5F700EF8F89 /* AppDelegate.swift */,
-				142D86752630F5F700EF8F89 /* SceneDelegate.swift */,
-				142D86772630F5F700EF8F89 /* ViewController.swift */,
-				142D86792630F5F700EF8F89 /* Main.storyboard */,
+				14DFF9F4263249C50009FA19 /* AppDelegates */,
+				14DFF9F5263249DD0009FA19 /* NetworkConnection */,
+				14DFF9F6263249F40009FA19 /* ViewControllers */,
+				14DFF9F726324A020009FA19 /* UtilityFunctions */,
+				14DFF9F826324A130009FA19 /* StoryBoards */,
 				142D867C2630F5F900EF8F89 /* Assets.xcassets */,
-				142D867E2630F5F900EF8F89 /* LaunchScreen.storyboard */,
 				142D86812630F5F900EF8F89 /* Info.plist */,
 			);
 			path = Task2;
+			sourceTree = "<group>";
+		};
+		14DFF9F4263249C50009FA19 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				142D86732630F5F700EF8F89 /* AppDelegate.swift */,
+				142D86752630F5F700EF8F89 /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		14DFF9F5263249DD0009FA19 /* NetworkConnection */ = {
+			isa = PBXGroup;
+			children = (
+				142D86892630F74B00EF8F89 /* TCPConnection.swift */,
+			);
+			path = NetworkConnection;
+			sourceTree = "<group>";
+		};
+		14DFF9F6263249F40009FA19 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				14DFF9F926324A600009FA19 /* TaskTwoMainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		14DFF9F726324A020009FA19 /* UtilityFunctions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UtilityFunctions;
+			sourceTree = "<group>";
+		};
+		14DFF9F826324A130009FA19 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				142D86792630F5F700EF8F89 /* Main.storyboard */,
+				142D867E2630F5F900EF8F89 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +180,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				142D86782630F5F700EF8F89 /* ViewController.swift in Sources */,
+				142D868A2630F74B00EF8F89 /* TCPConnection.swift in Sources */,
+				14DFF9FA26324A600009FA19 /* TaskTwoMainViewController.swift in Sources */,
 				142D86742630F5F700EF8F89 /* AppDelegate.swift in Sources */,
 				142D86762630F5F700EF8F89 /* SceneDelegate.swift in Sources */,
 			);
@@ -292,10 +336,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.afiniti.task2.Task2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.afiniti.task2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,10 +354,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.afiniti.task2.Task2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.afiniti.task2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
